@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 {% block pageContent %}
-<div class="flex flex-col h-screen items-center w-screen">
-    <div class="text-center">
-        <p class="text-5xl font-semibold">CODE3000</p>
+<div class="flex flex-col h-auto items-center w-screen">
+    <div class="text-center m-2 p-2">
         <P class="text-3xl font-bold">League {{ 1 }} Contest {{ contestNumber }} </P>
     </div>
     <div class="flex justify-center leaderboard w-screen overflow-auto">
         <table class="table-auto w-3/5">
-            <thead class="text-xs font-semibold uppercase text-gray-400 bg-yellow-100">
+            <thead class="text-xs font-semibold uppercase text-gray-600 bg-purple-200">
                 <tr>
                     <th class="p-2 whitespace-nowrap">
                         <div class="font-semibold text-left">Rank</div>
@@ -20,14 +19,14 @@
                     </th>
                 </tr>
             </thead>
-            <tbody class="text-sm divide-y divide-blue-200">
+            <tbody class="text-sm divide-y divide-blue-100">
                 {% for entry in contestData %}
                 <tr class="bg-blue-50">
                     <td class="p-2 whitespace-nowrap">
                         <div class="text-left">{{ entry['rank'] }}</div>
                     </td>
                     <td class="p-2 whitespace-nowrap">
-                        <div class="text-left uppercase"> {{ entry['id'] }} </div>
+                        <div class="text-left "> {{ entry['id'] }} </div>
                     </td>
                     <td class="p-2 whitespace-nowrap flex justify-center">
                         <div class="text-center font-semibold px-2 text-green-600 w-min bg-green-100 rounded-xl"> {{

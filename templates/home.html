@@ -1,4 +1,56 @@
 {% extends 'base.html' %}
 {% block pageContent %}
-    <p>Hello</p>
+<div class="flex flex-col h-screen items-center w-screen">
+    
+    <div id="leagues" class="flex-row bg-blue-400 m-4 p-4">
+        <div id="league1" class="mb-4 bg-pink-300 p-4 rounded-xl">
+            <p class="text-3xl font-semibold m-1 mb-3">League 1</p>
+            <div class="contests flex justify-around">
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 1</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 2</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 3</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 4</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 5</div>
+                </a>
+            </div>
+        </div>
+        <div id="league1" class="mb-4 bg-pink-300 p-4 rounded-xl">
+            <p class="text-3xl font-semibold m-1 mb-3">League 1</p>
+            <div class="contests flex justify-around">
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 1</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 2</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 3</div>
+                </a>
+            </div>
+        </div>
+        <div id="league3" class="mb-4 bg-pink-300 p-4 rounded-xl">
+            <p class="text-3xl font-semibold m-1 mb-3">League 3</p>
+            <div class="contests flex justify-around">
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 1</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 2</div>
+                </a>
+                <a href="{{ url_for('contest', leagueNumber=1, contestNumber=1) }}" class="mx-2">
+                    <div class="bg-purple-500 p-2 text-white">Contest 3</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock pageContent %}
