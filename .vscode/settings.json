@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/96409fa5-1a51-4344-b7e7-15fc2933cf01/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/code3000-pec",
+    "appService.deploySubpath": "."
+}
