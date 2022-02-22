@@ -9,17 +9,25 @@
             CODE3000
         {% endblock title %}
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    * {
+        font-family: 'SF Pro Display','Roboto';
+    }
+</style>
 <body>
-    <div class="">
-        {% block statiContent %}
-            
-        {% endblock statiContent %}
-    </div>
-    <div class="">
-        {% block pageContent %}
-            
-        {% endblock pageContent %}
+    <div class="flex flex-col h-screen w-full items-center">
+        <div class="">
+            {% block statiContent %}
+                
+            {% endblock statiContent %}
+        </div>
+        <div class="">
+            {% block pageContent %}
+                <p>Hello</p>
+            {% endblock pageContent %}
+        </div>
     </div>
 </body>
 </html>
